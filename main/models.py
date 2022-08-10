@@ -27,9 +27,12 @@ class Cidade (models.Model):
     cep = models.CharField(max_length=9)  
     estado = models.ForeignKey(Estado, on_delete= models.CASCADE)
 
+class Endereco (models.Model):
+    cidade = models.OneToOneField(cidade, on_delete=models.CASCADE)
+    bairro = models.CharField(max_length=70)
+    rua = models.CharField(max_length=100)
+    numero_casa = models.CharField(max_length= 5)
 
-#class Endereco (models.Model):
-    #estado
 
 
 
