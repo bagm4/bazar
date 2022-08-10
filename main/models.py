@@ -14,7 +14,6 @@ class Produto (models.Model):
     nome = models.CharField(max_length=150)
     preco = models.DecimalField(max_digits=8, decimal_places=2)
     descricao = models.TextField()
-    #categoria
     #subcategoria
   
 
@@ -34,13 +33,15 @@ class Endereco (models.Model):
     numero_casa = models.CharField(max_length= 5)
 
 
-
-
 class Usuario (models.Model):
     nome = models.CharField(max_length=150)
+    cpf = models.CharField(max_length=12)
     email = models.EmailField()
     senha = models.CharField(max_length=100)
-    #endereço
+    endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
 
+class Login (models.Model):
+    email = models.EmailField()
+    senha = models.CharField(max_length=100)
 
 # Create your models here.
