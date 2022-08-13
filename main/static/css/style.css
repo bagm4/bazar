@@ -1,3 +1,12 @@
-h1{
-    color: blue;
+.navbar a {
+    color: black;
 }
+
+.nav-item{
+    text-align: center;
+}
+
+.nav-item{
+    padding-left: 60px;
+}
+
