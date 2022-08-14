@@ -38,10 +38,6 @@ class Cadastro_Usuario (models.Model):
     cpf = models.CharField(max_length=12)
     email = models.EmailField()
     senha = models.CharField(max_length=100)
-<<<<<<< HEAD
-=======
-
->>>>>>> index
 
 class Login (models.Model):
     email = models.EmailField()
