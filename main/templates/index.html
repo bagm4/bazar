@@ -4,7 +4,35 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-<img src="{% static 'img/rascunho_imagem_index.png' %}" alt="">
-<h1>o gloria!!!!!!</h1>
+<img src="{% static 'img/rascunho_imagem_index.png' %}" alt="" style="margin-bottom: 60px;">
+
+<div class="container ">
+    <!--linha 1-->
+    <div class="row" style="margin-top: 60px;">
+        <div class="col ">
+            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+            <div class="sla">
+                <p>camisa social</p>
+                <p style="display:inline;">preço:<p class="preco_style"> R$40,00</p></p>
+            </div>  
+        </div>
+        <div class="col">
+            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+        </div>
+
+        <div class="col">
+            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+        </div>
+
+        <div class="col">
+        <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+        </div>
+
+    </div>
+
+  </div>
+
+
+  
   
 {% endblock content %}
