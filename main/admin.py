@@ -7,6 +7,6 @@ admin.site.register(Produto)
 admin.site.register(Cidade)
 admin.site.register(Estado)
 admin.site.register(Usuario)
-
+admin.site.register(Endereco)
 
 # Register your models here.

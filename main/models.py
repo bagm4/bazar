@@ -38,7 +38,6 @@ class Usuario (models.Model):
     cpf = models.CharField(max_length=12)
     email = models.EmailField()
     senha = models.CharField(max_length=100)
-    endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
 
 class Login (models.Model):
     email = models.EmailField()
