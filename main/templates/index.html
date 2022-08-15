@@ -6,33 +6,22 @@
 {% block content %}
 <img src="{% static 'img/rascunho_imagem_index.png' %}" alt="" style="margin-bottom: 60px;">
 
-<div class="container ">
-    <!--linha 1-->
-    <div class="row" style="margin-top: 60px;">
-        <div class="col ">
-            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
-            <div class="sla">
-                <p>camisa social</p>
-                <p style="display:inline;">preço:<p class="preco_style"> R$40,00</p></p>
-            </div>  
-        </div>
-        <div class="col">
-            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
-        </div>
-
-        <div class="col">
-            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
-        </div>
-
-        <div class="col">
-        <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
-        </div>
+<div class="row">
+    {% for produto in produtos %}
+    <div class="col" style="margin-top: 60px;">
+        <img src="/media/{{produto.imagem}}" width="250px" alt="">
+        <div >
+            <p style="margin-bottom: 0px;">{{produto.nome}}</p>
+            <p style="display:inline;">preço:<p class="preco_style"> R$ {{ produto.preco }}</p></p>
+        </div> 
 
     </div>
+    {% endfor %}
+    
 
-  </div>
 
-
-  
+<div class="container">
+    <!--linha 1-->
+    
   
 {% endblock content %}
