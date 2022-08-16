@@ -4,17 +4,5 @@
 
 {% block content %}
 <h1>{{categoria}}</h1>
-
-<div class="row">
-    {% for produto in produtos %}
-    <div class="col" style="margin-top: 60px;">
-        <img src="/media/{{produto.imagem}}" width="250px" alt="">
-        <div >
-            <p style="margin-bottom: 0px;">{{produto.nome}}</p>
-            <p style="display:inline;">preço:<p class="preco_style"> R$ {{ produto.preco }}</p></p>
-        </div> 
-
-    </div>
-    {% endfor %}
   
 {% endblock content %}
