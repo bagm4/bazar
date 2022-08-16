@@ -26,6 +26,6 @@ urlpatterns = [
     path('Feminino/', feminino, name='feminino'),
     path('masculino/', masculino, name='masculino'),
     path('acessorios/', acessorios, name='acessorios'),
-    path('ofertas/', ofertas, name='ofertas'),
+    
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
