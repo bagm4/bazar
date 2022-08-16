@@ -14,6 +14,7 @@ def index (request):
 
 def feminino (request):
     context = {'categoria': 'feminino'}
+    Produto.objects.filter(categoria__nome='feminino')
     return render(request, 'classe.html', context) 
 
 def masculino (request):
