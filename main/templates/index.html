@@ -12,9 +12,9 @@
         <img src="/media/{{produto.imagem}}" width="250px" alt="">
         <div >
             <p style="margin-bottom: 0px;">{{produto.nome}}</p>
-            <p style="display:inline;">preço:<p class="preco_style"> R$ {{ produto.preco }}</p></p>
-        </div> 
-
+            <p>preço:<span class="preco_style"> R$ {{ produto.preco }}</span></p>
+            <a href="" class="btn btn-primary" style="background-color:#D5943A; border: none;">Detalhes</a>
+        </div>
     </div>
     {% endfor %}
     
