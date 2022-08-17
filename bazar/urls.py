@@ -26,6 +26,7 @@ urlpatterns = [
     path('Feminino/', feminino, name='feminino'),
     path('masculino/', masculino, name='masculino'),
     path('acessorios/', acessorios, name='acessorios'),
+    path('detalhes/<int:id>', detalhes, name='detalhes'),
     
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
