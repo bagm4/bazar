@@ -30,4 +30,6 @@ def ofertas (request):
     return render(request, 'classe.html', context) 
 
 
-
+def quem_somos (request):
+    context = {'categoria': 'quem_somos'}
+    return render(request, 'quem_somos.html', context) 
