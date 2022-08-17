@@ -26,7 +26,11 @@ urlpatterns = [
     path('Feminino/', feminino, name='feminino'),
     path('masculino/', masculino, name='masculino'),
     path('acessorios/', acessorios, name='acessorios'),
+<<<<<<< HEAD
     path('quem_somos/', quem_somos, name='quem_somos'),
+=======
+    path('detalhes/<int:id>', detalhes, name='detalhes'),
+>>>>>>> 7ee1b2a71051306241683f0e15a1b65a040bb7ca
     
 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
