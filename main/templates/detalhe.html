@@ -1,7 +1,26 @@
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %}Detalhes{% endblock %}
 
 {% block content %}
+
+
+<div class="row borda" >
+    <div class="col text-center" style="margin-top: 60px;">
+        <div>
+            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+        </div>
+    </div>
+    <div class="col " style="margin-top: 60px; margin-bottom: 30px;">
+        <div >
+            <h1 style="margin-bottom: 0px;">Nome do produto</h1>
+            <p>preço:<span class="preco_style"> R$ 50,00</span></p>
+            <p>categoria</p>
+            <h2>Descrição</h2>
+            <p>textoooooooooooooooooooooooooooooooo ooooooooooooooooo oooooooooo oooooooooo ooooooooooooooo o oo oooooooooo oooooooooo ooooo oo o o oooooooo</p>
+        </div>
+    </div>
+
 
 {% endblock content %}

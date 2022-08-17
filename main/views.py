@@ -11,8 +11,10 @@ def index (request):
     context={'produtos' : lista}
     return render (request, 'index.html', context)
 
-def detalhes (request):
-    return render (request, 'detalhe.html')
+def detalhes (request, id):
+    produto = Produto.objects.get(id=id)
+    context = {'produto' : produto}
+    return render (request, 'detalhe.html', context)
 
 def feminino (request):
     context = {'categoria': 'feminino'}
