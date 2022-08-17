@@ -11,6 +11,8 @@ def index (request):
     context={'produtos' : lista}
     return render (request, 'index.html', context)
 
+def detalhes (request):
+    return render (request, 'detalhe.html')
 
 def feminino (request):
     context = {'categoria': 'feminino'}
@@ -30,4 +32,6 @@ def ofertas (request):
     return render(request, 'classe.html', context) 
 
 
-
+def quem_somos (request):
+    context = {'categoria': 'quem_somos'}
+    return render(request, 'quem_somos.html', context) 

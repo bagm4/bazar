@@ -3,8 +3,11 @@
 *.pot
 *.pyc
 __pycache__
+<<<<<<< HEAD
 db.sqlite3
-media
+=======
+>>>>>>> 80da6c44c0faabb874400f8767cab6e4c2ce3871
+
 
 # Backup files # 
 *.bak 
