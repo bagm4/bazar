@@ -67,3 +67,14 @@ h2{
     line-height: 24px;
     color: #D5943A;
 }
+
+.fontbot{
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 19px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 50px;
+}

@@ -16,6 +16,9 @@ def detalhes (request, id):
     context = {'produto' : produto}
     return render (request, 'detalhe.html', context)
 
+def quem_somos (request):
+    return render (request, 'quem_somos.html')
+
 def feminino (request):
     context = {'categoria': 'feminino'}
     Produto.objects.filter(categoria__nome='feminino')

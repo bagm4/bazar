@@ -8,12 +8,12 @@
 
 <div class="row">
     {% for produto in produtos %}
-    <div class="col" style="margin-top: 60px;">
+    <div class="col" style="margin-top: 90px;">
         <img src="/media/{{produto.imagem}}" width="250px" alt="">
         <div >
             <p style="margin-bottom: 0px;">{{produto.nome}}</p>
             <p>preço:<span class="preco_style"> R$ {{ produto.preco }}</span></p>
-            <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary" style="background-color:#D5943A; border: none;">Detalhes</a>
+            <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary fontbot" style="background-color:#D5943A; border: none;">Detalhes</a>
         </div>
     </div>
     {% endfor %}

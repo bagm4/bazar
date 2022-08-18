@@ -19,11 +19,12 @@
             <p class="tag_categoria">{{produto.categoria}}</p>
             <h2>Descrição:</h2>
             <p>{{produto.descricao}}</p>
+            <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary fontbot" style="background-color:#9D8561; border: none;">voltar</a>
+            <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary fontbot" style="background-color:#7E9F82; border: none;">adicionar</a>
         </div>
     </div>
     <div class="col">
-        <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary" style="background-color:#9D8561; border: none; border-radius: 50px;">voltar</a>
-        <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary" style="background-color:#D5943A; border: none; border-radius: 50px;">adicionar</a>
+        
     </div>
 </div>    
 
