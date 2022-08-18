@@ -11,9 +11,20 @@
     padding-left: 60px;
 }
 
-/*margens*/
-.mb5{
-    margin-bottom: 5px;
+/*elementos*/
+h1{
+    font-family: inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    padding-bottom: 5px;
+}
+
+h2{
+    font-family: inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
 }
 
 
@@ -29,6 +40,10 @@
     border-radius: 50px;
 }
 
+.mt100{
+    margin-top: 100px;
+}
+
 
 /*outros*/
 .preco_style{
@@ -36,4 +51,19 @@
     font-weight: 600;
     font-size: 20px;
 }
-
+.det_preco{
+    width: 140px;
+    height: 35px;
+    left: 527px;
+    background: #D5943A;
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFFDFB;
+}
+.tag_categoria{
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+    color: #D5943A;
+}

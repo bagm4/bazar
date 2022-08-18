@@ -7,20 +7,25 @@
 
 
 <div class="row borda" >
-    <div class="col text-center" style="margin-top: 60px;">
-        <div>
-            <img src="{% static 'img/rascunho_img_produto.png' %}" width="250px" alt="">
+    <div class="col text-center" style="margin-top: 40px;">
+        <div style="margin-bottom: 40px;">
+            <img src="/media/{{produto.imagem}}" width="250px" alt="">
         </div>
     </div>
-    <div class="col " style="margin-top: 60px; margin-bottom: 30px;">
+    <div class="col " style="margin-top: 60px; margin-bottom: 40px;">
         <div >
-            <h1 style="margin-bottom: 0px;">Nome do produto</h1>
-            <p>preço:<span class="preco_style"> R$ 50,00</span></p>
-            <p>categoria</p>
-            <h2>Descrição</h2>
-            <p>textoooooooooooooooooooooooooooooooo ooooooooooooooooo oooooooooo oooooooooo ooooooooooooooo o oo oooooooooo oooooooooo ooooo oo o o oooooooo</p>
+            <h1 style="margin-bottom: 0px;">{{produto.nome}}</h1>
+            <p class="det_preco">R$ {{produto.preco}}</p>
+            <p class="tag_categoria">{{produto.categoria}}</p>
+            <h2>Descrição:</h2>
+            <p>{{produto.descricao}}</p>
         </div>
     </div>
+    <div class="col">
+        <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary" style="background-color:#9D8561; border: none; border-radius: 50px;">voltar</a>
+        <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary" style="background-color:#D5943A; border: none; border-radius: 50px;">adicionar</a>
+    </div>
+</div>    
 
 
 {% endblock content %}
