@@ -10,6 +10,9 @@
 .nav-item{
     padding-left: 60px;
 }
+body{
+    background-color: white;
+}
 
 /*elementos*/
 h1{
